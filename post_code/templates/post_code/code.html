@@ -5,6 +5,7 @@
 {% block content %}
     {% load static %}
     <script src="{% static "highlight.pack.js" %}"></script>
+    <div class="navi"><a href="{% url 'code:index' %}">Cimple</a> > {{ code.title }} </div>
     <div class="code-title">
         {{ code.title }}
     </div>
