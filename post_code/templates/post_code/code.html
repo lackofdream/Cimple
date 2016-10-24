@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>{{ code.title }} - Cimple</title>
+{% endblock title %}
+{% block content %}
+    {% load static %}
+    <script src="{% static "highlight.min.js" %}"></script>
+    <div class="code-title">
+        {{ code.title }}
+    </div>
+    <div class="code-text">
+        <pre><code>{{ code.code_text }}</code></pre>
+    </div>
+    <script>hljs.initHighlightingOnLoad();</script>
+{% endblock content %}

@@ -1,0 +1,72 @@
+@media (max-width: 1024px) {
+    #content {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1025px) {
+    #content {
+        width: 900px;
+    }
+}
+
+#content {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 20px;
+
+    box-shadow: 2px 1px 5px #aeaeae;
+}
+
+.code-title {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+#f-code {
+    height: 400px;
+    width: 70%;
+}
+
+#f-title {
+    width: 70%;
+}
+
+label {
+    width: 70px;
+    display: block;
+    float: left;
+    font-size: large;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Arial, serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+
+.message {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.2);
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+}

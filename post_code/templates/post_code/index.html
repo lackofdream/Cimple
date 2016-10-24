@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="{% url 'code:index' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="f-title" value="{% if code_title %}{{ code_title }}{% endif %}">
+        </div>
+        <div class="form-group">
+            <label for="code">Code</label>
+            <textarea name="code" id="f-code">{% if code_text %}{{ code_text }}{% endif %}</textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+{% endblock content %}
